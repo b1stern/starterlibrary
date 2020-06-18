@@ -101,13 +101,13 @@ variable "vm_1_resource_pool" {
 variable "vm_1_dns_suffixes" {
   type        = list(string)
   description = "Name resolution suffixes for the virtual network adapter"
-  default     = "tivlab.raleigh.ibm.com"
+  default     = ["tivlab.raleigh.ibm.com"]
 }
 
 variable "vm_1_dns_servers" {
   type        = list(string)
   description = "DNS servers for the virtual network adapter"
-  default     = "9.42.4.253"
+  default     = ["9.42.4.253"]
 }
 
 variable "vm_1_network_interface_label" {
