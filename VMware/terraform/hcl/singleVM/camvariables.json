@@ -65,7 +65,7 @@
       "type": "list",
       "description": "Name resolution suffixes for the virtual network adapter",
       "hidden": true,
-      "default": "tivlab.raleigh.ibm.com",
+      "default": ["tivlab.raleigh.ibm.com"],
       "label": "DNS Suffixes",
       "secured": false,
       "required": true,
