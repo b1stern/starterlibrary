@@ -64,6 +64,9 @@ variable "vm_1_name" {
 ##### Resource : vm_1
 #########################################################
 
+variable "vm_1_folder" {
+  description = "Target vSphere folder for virtual machine"
+}
 
 variable "vm_1_datacenter" {
   description = "Target vSphere datacenter for virtual machine creation"
@@ -166,6 +169,7 @@ variable "vm_1-image" {
 # vsphere vm
 resource "vsphere_virtual_machine" "vm_1" {
   name             = var.vm_1_name
+  folder           = var.vm_1_folder
   num_cpus         = var.vm_1_number_of_vcpu
   memory           = var.vm_1_memory
   resource_pool_id = data.vsphere_resource_pool.vm_1_resource_pool.id
