@@ -74,7 +74,7 @@ variable "vm_1_datacenter" {
 }
 
 variable "vm_1_domain" {
-  description = "Domain Name of virtual machine",
+  description = "Domain Name of virtual machine"
   default = "tivlab.raleigh.ibm.com"
 }
 
@@ -100,7 +100,7 @@ variable "vm_1_resource_pool" {
 
 variable "vm_1_dns_suffixes" {
   type        = list(string)
-  description = "Name resolution suffixes for the virtual network adapter",
+  description = "Name resolution suffixes for the virtual network adapter"
   default     = "tivlab.raleigh.ibm.com"
 }
 
