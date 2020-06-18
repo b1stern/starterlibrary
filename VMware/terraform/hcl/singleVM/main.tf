@@ -169,7 +169,6 @@ variable "vm_1-image" {
 # vsphere vm
 resource "vsphere_virtual_machine" "vm_1" {
   name             = var.vm_1_name
-  folder           = var.vm_1_folder
   num_cpus         = var.vm_1_number_of_vcpu
   memory           = var.vm_1_memory
   resource_pool_id = data.vsphere_resource_pool.vm_1_resource_pool.id
