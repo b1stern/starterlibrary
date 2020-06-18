@@ -66,7 +66,7 @@ variable "vm_1_name" {
 
 variable "vm_1_folder" {
   description = "Target vSphere folder for virtual machine"
-  default     = "/teraform/singlevm"
+  default     = "/RTP/vm/teraform"
 }
 
 variable "vm_1_datacenter" {
