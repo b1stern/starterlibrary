@@ -70,10 +70,12 @@ variable "vm_1_folder" {
 
 variable "vm_1_datacenter" {
   description = "Target vSphere datacenter for virtual machine creation"
+  default = "RTP"
 }
 
 variable "vm_1_domain" {
-  description = "Domain Name of virtual machine"
+  description = "Domain Name of virtual machine",
+  default = "tivlab.raleigh.ibm.com"
 }
 
 variable "vm_1_number_of_vcpu" {
@@ -88,6 +90,7 @@ variable "vm_1_memory" {
 
 variable "vm_1_cluster" {
   description = "Target vSphere cluster to host the virtual machine"
+  default     = "X3750"
 }
 
 variable "vm_1_resource_pool" {
@@ -97,20 +100,24 @@ variable "vm_1_resource_pool" {
 
 variable "vm_1_dns_suffixes" {
   type        = list(string)
-  description = "Name resolution suffixes for the virtual network adapter"
+  description = "Name resolution suffixes for the virtual network adapter",
+  default     = "tivlab.raleigh.ibm.com"
 }
 
 variable "vm_1_dns_servers" {
   type        = list(string)
   description = "DNS servers for the virtual network adapter"
+  default     = "9.42.4.253"
 }
 
 variable "vm_1_network_interface_label" {
   description = "vSphere port group or network label for virtual machine's vNIC"
+  default     = "VM Network"
 }
 
 variable "vm_1_ipv4_gateway" {
   description = "IPv4 gateway for vNIC configuration"
+  default     = "9.42.12.1"
 }
 
 variable "vm_1_ipv4_address" {
@@ -119,6 +126,7 @@ variable "vm_1_ipv4_address" {
 
 variable "vm_1_ipv4_prefix_length" {
   description = "IPv4 prefix length for vNIC configuration. The value must be a number between 8 and 32"
+  default     = "9.42.12.176"
 }
 
 variable "vm_1_adapter_type" {
@@ -128,12 +136,13 @@ variable "vm_1_adapter_type" {
 
 variable "vm_1_root_disk_datastore" {
   description = "Data store or storage cluster name for target virtual machine's disks"
+  default     = "v7000_vmware2_v6"
 }
 
 variable "vm_1_root_disk_type" {
   type        = string
   description = "Type of template disk volume"
-  default     = "eager_zeroed"
+  default     = "thin"
 }
 
 variable "vm_1_root_disk_controller_type" {
@@ -145,12 +154,12 @@ variable "vm_1_root_disk_controller_type" {
 variable "vm_1_root_disk_keep_on_remove" {
   type        = string
   description = "Delete template disk volume when the virtual machine is deleted"
-  default     = "false"
+  default     = "true"
 }
 
 variable "vm_1_root_disk_size" {
   description = "Size of template disk volume. Should be equal to template's disk size"
-  default     = "25"
+  default     = "40"
 }
 
 variable "vm_1-image" {
