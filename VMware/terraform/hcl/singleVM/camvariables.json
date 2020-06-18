@@ -340,7 +340,7 @@
       "type": "string",
       "description": "Target vSphere Resource Pool to host the virtual machine",
       "hidden": true,
-      "default": "Pool1"
+      "default": "Pool1",
       "label": "vSphere Resource Pool - vm_1",
       "secured": false,
       "required": true,
