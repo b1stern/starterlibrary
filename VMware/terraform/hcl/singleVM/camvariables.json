@@ -303,6 +303,18 @@
       "group_name": "cloud"
     },
     {
+      "name": "vm_1_folder",
+      "type": "string",
+      "description": "Target vSphere folder for virtual machine",
+      "default": "/teraform/singlevm",
+      "hidden": false,
+      "label": "vSphere Folder Name - vm_1",
+      "secured": false,
+      "required": false,
+      "immutable": false,
+      "group_name": "cloud"
+    },
+    {
       "name": "vm_1_adapter_type",
       "type": "string",
       "description": "Network adapter type for vNIC Configuration",
