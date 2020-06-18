@@ -64,9 +64,6 @@ variable "vm_1_name" {
 ##### Resource : vm_1
 #########################################################
 
-variable "vm_1_folder" {
-  description = "Target vSphere folder for virtual machine"
-}
 
 variable "vm_1_datacenter" {
   description = "Target vSphere datacenter for virtual machine creation"
