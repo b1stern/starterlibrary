@@ -52,7 +52,7 @@
       "name": "vm_1_dns_servers",
       "type": "list",
       "description": "DNS servers for the virtual network adapter",
-      "default": "9.42.4.253",
+      "default": ["9.42.4.253"],
       "hidden": true,
       "label": "DNS Servers",
       "secured": false,
