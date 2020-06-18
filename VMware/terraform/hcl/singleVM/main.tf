@@ -78,12 +78,12 @@ variable "vm_1_domain" {
 
 variable "vm_1_number_of_vcpu" {
   description = "Number of virtual CPU for the virtual machine, which is required to be a positive Integer"
-  default     = "1"
+  default     = "4"
 }
 
 variable "vm_1_memory" {
   description = "Memory assigned to the virtual machine in megabytes. This value is required to be an increment of 1024"
-  default     = "1024"
+  default     = "8192"
 }
 
 variable "vm_1_cluster" {
@@ -92,6 +92,7 @@ variable "vm_1_cluster" {
 
 variable "vm_1_resource_pool" {
   description = "Target vSphere Resource Pool to host the virtual machine"
+  default     = "Pool1"
 }
 
 variable "vm_1_dns_suffixes" {
