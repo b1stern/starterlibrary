@@ -306,7 +306,7 @@
       "name": "vm_1_folder",
       "type": "string",
       "description": "Target vSphere folder for virtual machine",
-      "default": "/teraform/singlevm",
+      "default": "/RTP/teraform",
       "hidden": false,
       "label": "vSphere Folder Name - vm_1",
       "secured": false,
