@@ -14,19 +14,22 @@
 ################################################################
 variable "openstack_image_id" {
   description = "The ID of the image to be used for deploy operations."
+  default = "c0e30156-5a98-4506-9ed2-79c5b8aaef8c"
 }
 
 variable "openstack_flavor_id" {
   description = "The ID of the flavor to be used for deploy operations."
+  default="1"
 }
 
 variable "openstack_network_name" {
   description = "The name of the network to be used for deploy operations."
+  default="external"
 }
 
 variable "key_pair_name" {
   description = "The name of a ssh key pair which will be injected into the instance when they are created. The key pair must already be created and associated with the tenant's account. Changing key pair name creates a new instance."
-  default = ""  
+  default = "microstack"  
 }
 
 variable "instance_name" {
