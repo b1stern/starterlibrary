@@ -1,5 +1,5 @@
 {
-   "name": "OpenStack Single Virtual Machine",
+   "name": "02 - Provision OpenStack VM",
    "description": "OpenStack example to instantiate virtual machine.",
    "version": "1.0",
    "imageUrl": "./assets/svg/IBM_WebSphere_Standalone.svg",
@@ -23,7 +23,7 @@
       }
    },
    "metadata": {
-     "displayName": "OpenStack Single Virtual Machine",
+     "displayName": "02 - Provision OpenStack VM",
      "providerDisplayName": "OpenStack",
      "longDescription": "OpenStack Single Virtual Machine Example",
      "bullets": [
