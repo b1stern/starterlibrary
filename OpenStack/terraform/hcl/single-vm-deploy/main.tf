@@ -18,7 +18,7 @@ variable "openstack_image_id" {
 }
 
 variable "openstack_flavor_id" {
-  description = "The ID of the flavor to be used for deploy operations."
+  description = "The ID of the flavor to be deployed (1=tiny, 2=small, 3=medium, 4=large, 5=xlarge)."
   default="1"
 }
 
