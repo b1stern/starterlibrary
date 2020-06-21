@@ -127,7 +127,7 @@ variable "vm_1_ipv4_address" {
 
 variable "vm_1_ipv4_prefix_length" {
   description = "IPv4 prefix length for vNIC configuration. The value must be a number between 8 and 32"
-  default     = "9.42.12.176"
+  default     = "22"
 }
 
 variable "vm_1_adapter_type" {
